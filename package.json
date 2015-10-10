@@ -1,0 +1,6 @@
+{
+	"name": " auto_input",
+	"dependencies" : {
+		"jquerygo" : ">=0"
+	}
+}
