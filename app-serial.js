@@ -18,6 +18,10 @@ async.series([
 		$('input#wp-submit').click( function(){ console.log('logging in!'); done();} );
 	},
 	$.go('waitForPage'),
+	function(done){
+		console.log('logged in!');
+		done();
+	},
 ], function(){
 	$.capture(__dirname + '\\screenshot_loggedin.png');
 	$.close();
